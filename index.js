@@ -20,26 +20,6 @@ app.get('/about', (req, res) => {
   res.render("pages/about", { "title": title });
 });
 
-app.get('/kdrama', (req, res) => {
-  let title = "Kdrama Recommendations";
-  res.render("pages/kdrama", { "title": title });
-});
-
-app.get('/crochet', (req, res) => {
-  let title = "Crochet";
-  res.render("pages/crochet", { "title": title });
-});
-
-app.get('/games', (req, res) => {
-  let title = "Games";
-  res.render("pages/games", { "title": title });
-});
-
-app.get('/goals', (req, res) => {
-  let title = "Future Goals";
-  res.render("pages/goals", { "title": title });
-});
-
 //users index is our list page
 app.get('/users', function(req, res) {
 	var title = 'Users Page';
